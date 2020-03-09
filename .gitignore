@@ -59,6 +59,7 @@ fabric.properties
 *.idea
 */out/
 *.iml
+.idea
 
 .metadata
 bin/
