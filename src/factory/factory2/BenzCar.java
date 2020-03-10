@@ -1,4 +1,4 @@
-package factory.simple;
+package factory.factory2;
 
 /**
  * @author wangzhiguo
