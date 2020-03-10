@@ -1,7 +1,5 @@
 package singleton;
 
-import singleton.instance.Instance;
-
 /**
  * 饿汉式单例
  * 此单例利用静态代码块进行初始化
@@ -9,17 +7,17 @@ import singleton.instance.Instance;
  */
 public class Singleton2 {
 
-    private static Instance instance = null;
+    private static Singleton2 instance = null;
 
     static {
-        instance = new Instance();
+        instance = new Singleton2();
     }
 
     private Singleton2(){
 
     }
 
-    public Instance getInstance(){
+    public Singleton2 getInstance(){
         return instance;
     }
 

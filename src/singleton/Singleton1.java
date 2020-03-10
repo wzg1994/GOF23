@@ -1,7 +1,5 @@
 package singleton;
 
-import singleton.instance.Instance;
-
 /**
  *
  * 饿汉式单例模式
@@ -12,13 +10,15 @@ public class Singleton1 {
 
     /**
      * 私有成员变量
+     * 利用静态变量来记录Singleton的唯一实例
+     * 直接初始化静态变量，这样就可以确保线程安全了
      */
-    private static final Instance INSTANCE = new Instance();
+    private static final Singleton1 INSTANCE = new Singleton1();
 
     /**
      * 公有的get方法
      */
-    public Instance getInstance(){
+    public Singleton1 getInstance(){
         return INSTANCE;
     }
 

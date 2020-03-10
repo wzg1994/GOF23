@@ -1,19 +1,17 @@
 package singleton;
 
-import singleton.instance.Instance;
-
 /**
  * 懒汉式单例（线程不安全）
  * @author wangzhiguo
  */
 public class Singleton3 {
 
-    private Instance instance = null;
+    private static Singleton3 instance;
 
-    public Instance getInstance(){
+    public Singleton3 getInstance(){
         //造成线程不安全的原因是这个if判断
         if (instance == null) {
-            instance = new Instance();
+            instance = new Singleton3();
         }
 
         return instance;
