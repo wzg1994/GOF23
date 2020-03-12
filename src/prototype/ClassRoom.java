@@ -47,8 +47,8 @@ public class ClassRoom implements Cloneable{
     @Override
     protected Object clone() throws CloneNotSupportedException {
         ClassRoom clone = (ClassRoom) super.clone();
-        Date clone1 = (Date) this.date.clone();
-        clone.setDate(clone1);
+        Date date1 = (Date) this.date.clone();
+        clone.setDate(date1);
         return clone;
     }
 

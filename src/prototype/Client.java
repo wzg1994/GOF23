@@ -16,10 +16,11 @@ public class Client {
     public static void main(String[] args) throws CloneNotSupportedException {
         Date date = new Date();
         ClassRoom classRoom = new ClassRoom(1, "一年三班", date);
-        classRoom.setDate(new Date(114));
-        System.out.println(classRoom);
-        System.out.println("===============================================");
         ClassRoom cloneClassRoom = (ClassRoom) classRoom.clone();
+        classRoom.setDate(new Date(3));
+        System.out.println(classRoom);
+        System.out.println("=============================================================");
+//        cloneClassRoom.setDate(new Date(3));
         System.out.println(cloneClassRoom);
     }
 }
