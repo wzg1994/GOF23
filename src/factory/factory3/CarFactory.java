@@ -3,8 +3,15 @@ package factory.factory3;
 /**
  * @author wangzhiguo
  */
-public interface CarFactory {
+public class CarFactory implements AbstractFactory {
+    
+    @Override
+    public Car makeCar() {
+        return null;
+    }
 
-    Car productCar();
-
+    @Override
+    public Motorcycle makeMotorcycle() {
+        return null;
+    }
 }
