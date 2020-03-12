@@ -18,7 +18,7 @@ public class Singleton1 {
     /**
      * 公有的get方法
      */
-    public Singleton1 getInstance(){
+    public static Singleton1 getInstance(){
         return INSTANCE;
     }
 

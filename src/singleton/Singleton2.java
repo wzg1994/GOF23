@@ -17,7 +17,7 @@ public class Singleton2 {
 
     }
 
-    public Singleton2 getInstance(){
+    public static Singleton2 getInstance(){
         return instance;
     }
 

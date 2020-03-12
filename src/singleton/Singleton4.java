@@ -14,7 +14,7 @@ public class Singleton4 {
 
     }
 
-    public Singleton4 getInstance(){
+    public static Singleton4 getInstance(){
         if (instance == null) {
             //第一层检查，检查是否有引用指向对象，高并发情况下会有多个线程同时进入
             synchronized (Singleton4.class) {

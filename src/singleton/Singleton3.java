@@ -8,7 +8,7 @@ public class Singleton3 {
 
     private static Singleton3 instance;
 
-    public Singleton3 getInstance(){
+    public static Singleton3 getInstance(){
         //造成线程不安全的原因是这个if判断
         if (instance == null) {
             instance = new Singleton3();
