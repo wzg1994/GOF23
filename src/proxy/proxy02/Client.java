@@ -8,5 +8,11 @@ public class Client {
         myInvocationHandler.setTarget(dog);
         Dog proxy = (Dog) myInvocationHandler.getProxy();
         proxy.run();
+
+        Dog dog1 = new YourDog();
+        MyInvocationHandler myInvocationHandler1 = new MyInvocationHandler();
+        myInvocationHandler1.setTarget(dog1);
+        Dog proxy1 = (Dog) myInvocationHandler.getProxy();
+        proxy1.run();
     }
 }
