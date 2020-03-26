@@ -3,11 +3,33 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <!--指定了当前pom模型的版本,必须这样写，不可更改-->
     <modelVersion>4.0.0</modelVersion>
-
-    <!--坐标信息，并未固定要求，但约定俗成，模块概念和idea有些类似，一个项目分为多个模块-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+        <relativePath /> <!-- lookup parent from repository -->
+    </parent>
     <artifactId>GOF23</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>GOF23</name>
+    <description>GOF23</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-to-slf4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
 
 </project>
