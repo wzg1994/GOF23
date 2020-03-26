@@ -1,4 +1,4 @@
-package chain;
+package chain.simple;
 
 /**
  * @author wangzhiguo
