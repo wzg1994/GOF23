@@ -1,4 +1,4 @@
-package listener;
+package listener.demo1;
 
 /**
  * @author wangzhiguo
@@ -6,7 +6,7 @@ package listener;
 public class TestListener {
 
     public static void main(String[] args) {
-        Person person=new Person();
+        Person person = new Person();
         person.registerListener(new MyPersonListener());
         person.run();
         person.eat();
